@@ -1,0 +1,17 @@
+Creo que no entendiste el sistema, te complicaste mas de lo que tuvo que haber sido
+La unica persona que usara el sistema es mi abuelo, o si no el administrador que mi abuelo ponga a cargo 
+Osea que seria un administrador que pueda crear otro administrador y asi pueda editar si esta o no esta habilitado
+El contador no tendra acceso al sistema, lo unico que le podemos  dar al contador es que quiero que haya la opcion
+de elegir rangos de fechas como de 1 de julio a 20 de diciembre por ejemplo y exportar en un zip o excel, todas las facturas que hubieron, 
+y categorizarlo por facturas y ordenes de pedido. 
+Siento que en cuanto a la estetica se puede mejorar. Al hacer una factura, los productos que se enlistan
+en el formulario para hacer un pedido o factura, debo poder editar que productos tengo un quick access para agregar a una factura. 
+El calendario puede tener mejora, los carros que usualmente se usan en fletes son camiones. seria opcional la opcion de poder poner algo que no es un camion. 
+Seria bueno tambine poder llevar un control de los pedidos, entonces supongamos que ahorita se alisto el pedido y el empleado salio a las 9, marcar pedido como en marcha 
+y regrese marcarlo como entregado. 
+Tambien el ingreso seria con correo electronico. 
+Los empleados no usaran el sistema. Ademas siento que tambien podriamos optimizar el diseno y hacerlo menos generico
+y hacerlo ver mas modern y pretty, en el main page siento que podriamos cambiar de que sea colorido, a usar diferentes tonalidades de 
+verde, blanco y negro en los botones para las diferentes secciones. ACORDATE: analiza esto y hace un analisis en este punto del proyecto. 
+Detalla un plan y ese plan lo iremos llevando por partes, primero te consultare el estado y vos me daras un prompt en texto en el cli para codex, yo se lo mandare a codex el trabajara y hare una nueva sesion. 
+En esa nueva sesion te dire que codex ya temrino su tarea y varificaras que todo va bien, y me das el prompt para el sigueinte paso 

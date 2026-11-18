@@ -1,0 +1,63 @@
+/* "Paredes de pulpería": superficies sobrias; el color fuerte vive solo en los botones del inicio. */
+:root {
+    --marca: #2D7A3E;
+    --hoja: var(--marca);
+    --hoja-oscura: #1E5A2C;
+    --radio-rotulo: 6px;
+    --radio-tarjeta: 10px;
+    --radio-boton: 8px;
+    --turquesa: #0e7c86;
+    --mango: #f5b700;
+    --tinta: #1d3557;
+    --chile: #b42318;
+    --texto: #1b2320;
+    --suave: #52615a;
+    --fondo: #eef3f0;
+    --linea: #cfdad4;
+    --display: 'Bricolage Grotesque Variable', 'Atkinson Hyperlegible', system-ui, sans-serif;
+}
+
+html { font-size: 18px; }
+body, .v-application {
+    font-family: 'Atkinson Hyperlegible', system-ui, sans-serif !important;
+    color: var(--texto);
+    background: var(--fondo);
+}
+.v-application .text-h1, .v-application .text-h2, .v-application .text-h3,
+.v-application .text-h4, .v-application .text-h5, .v-application .text-h6, .display {
+    font-family: var(--display) !important;
+    letter-spacing: -0.01em !important;
+}
+.page-title { font-family: var(--display); font-weight: 800; font-size: 2rem; line-height: 1.15; margin: 0; }
+.page-sub { color: var(--suave); font-size: 1.05rem; margin: 4px 0 0; max-width: 62ch; }
+.money { font-variant-numeric: tabular-nums; white-space: normal; overflow-wrap: anywhere; }
+.muted { color: var(--suave); }
+
+/* Foco visible y grande para teclado. */
+:focus-visible { outline: 3px solid var(--mango) !important; outline-offset: 2px; }
+
+.v-btn { text-transform: none !important; letter-spacing: 0 !important; font-weight: 700; }
+.v-table th { font-weight: 700 !important; font-size: 0.95rem !important; color: var(--suave) !important; }
+.v-table td { font-size: 1rem !important; }
+.row-dim td { color: var(--suave) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* Permite encoger las columnas y desplazar tablas en tablet. */
+.v-col, .v-card, .v-main { min-width: 0; }
+.v-table__wrapper { overflow-x: auto; }
+.v-card-actions { flex-wrap: wrap; gap: 8px; }
+
+.page-title, h2, .display, [class*="text-h"] { font-optical-sizing: auto; }
+h2, .sec, .step { font-family: var(--display); font-size: 1.35rem; font-weight: 700; }
+.v-card { border-radius: var(--radio-tarjeta) !important; }
+.v-btn { border-radius: var(--radio-boton); }
+.v-btn--variant-flat[class*="bg-"], .v-btn--variant-elevated[class*="bg-"] { box-shadow: 0 3px 0 rgba(0,0,0,.28); }
+.v-btn--variant-flat[class*="bg-"]:active, .v-btn--variant-elevated[class*="bg-"]:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,.28); }
+.v-btn--variant-outlined { border-width: 2px; }
+.v-table th { background: rgb(var(--v-theme-surface-variant)); text-transform: none; }
+.v-table td, .v-table th { height: 52px !important; }
+.v-table tbody tr:hover { background: rgba(45,122,62,.06); }
+.v-table .money, .v-table .text-right { text-align: right; font-variant-numeric: tabular-nums; }
